@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html ng-app="CD">
+<head>
+    <title>User Details</title>
+    <meta charset="utf-8" />
+</head>
+<body ng-controller="indexController">
+    <div>
+        <label>Surname</label>
+        <input ng-model="user.Surname" type="text" />
+    </div>
+    <div>
+        <label>First name</label>
+        <input ng-model="user.FirstName" type="text" />
+    </div>
+    <div>
+        <label>Identity Type</label>
+        <input ng-model="user.IdentityType" type="text" />
+    </div>
+    <div>
+        <label>Id Number</label>
+        <input ng-model="user.IdentityNumber" type="text" />
+    </div>
+    <div>
+        <label>Date Of Birth</label>
+        <input ng-model="user.DateOfBirth" type="text" />
+    </div>
+    <div ng-if="isSave">
+        <button ng-disabled="isSaving" ng-click="saveUser(user)" type="button">Save</button>
+        
+    </div>
+    <div ng-if="isUpdate">
+        <button ng-disabled="isSaving" ng-click="updateUser(user)" type="button">Update</button>
+    </div>
+    <p style="color:red" ng-if="isSaving">Please wait while we save user information</p>
+    <p style="color:red" ng-if="isLoading">Please wait while we load user information</p>
+</body>
+</html>
+
+
+<script src="Scripts/jquery.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>
+<script src="Scripts/revolution.min.js"></script>
+<script src="Scripts/bxslider.js"></script>
+<script src="Scripts/owl.carousel.min.js"></script>
+<script src="Scripts/jquery.fancybox.pack.js"></script>
+<script src="Scripts/wow.js"></script>
+<script src="Scripts/script.js"></script>
+
+<!--<script src="Assets/js/bootstrap.js"></script>-->
+<script src="Scripts/jquery.flexisel.js"></script>
+<script src="Scripts/jquery.flexslider.js"></script>
+<script src="Scripts/counterup.min.js"></script>
+
+<!-- libraries -->
+<script src="Scripts/angular.js"></script>
+<script src="Scripts/angularJwt.js"></script>
+<script src="Scripts/angular-route.js"></script>
+<script src="Scripts/angular-ui-router.js"></script>
+<script src="Scripts/angular-local-storage.min.js"></script>
+<script src="Scripts/ngStorage.min.js"></script>
+<script src="Scripts/ai.0.15.0-build58334.js"></script>
+<script src="Scripts/angular-animate.js"></script>
+<script src="Scripts/angular-aria.js"></script>
+
+<script src="Scripts/angular-material.js"></script>
+<script src="Scripts/angular-messages.js"></script>
+<script src="Scripts/angular-mocks.js"></script>
+<script src="Scripts/angular-moment.min.js"></script>
+
+<script src="Scripts/base64.js"></script>
+<script src="Scripts/bootstrap.js"></script>
+<script src="Scripts/counterup.min.js"></script>
+<script src="Scripts/interceptor.js"></script>
+<script src="Scripts/jquery.flexisel.js"></script>
+<script src="Scripts/jquery.flexslider.js"></script>
+<script src="Scripts/jquery-2.1.4.min.js"></script>
+<script src="Scripts/bootstrap.js"></script>
+<script src="Scripts/scripts.js"></script>
+<script src="Scripts/loading-bar.js"></script>
+<script src="Scripts/angular-toastr.tpls.min.js"></script>
+
+<script src="app.js"></script>
+
+<!-- controller  -->
+<script src="index.controller.js"></script>
+<script src="user.service.js"></script>
